@@ -1,12 +1,5 @@
-/* To specify styling for root*/
-/* * {
-    font-size: 16px;
-} */
 html {
-    font-size: 16px;
-    color: rgb(30, 30, 30);
-    /* background-color: #FFFF00; */
-    /* color: rgba(0, 0, 0, 0); */
+    font-size: 14px;
 }
 
 body {
@@ -16,17 +9,9 @@ body {
     font-size: 1rem;
     font-weight: 500;
     /* text-align: justify; ensures that there is no empty spaces in the line */
-    text-align: left;
     line-height: 1.5;
     color: #302f2f;
-    width: 1348px;
 }
-
-/*@media screen and (orientation: landscape) {
-    body {
-       background-color: lightblue;
-    }
-}*/
 
 h1,
 h2,
@@ -41,192 +26,148 @@ h6 {
     color: #222222;
 }
 
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+h6 {font-size: 1rem;}
+
+a {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: purple;
+}
+
 #navbar {
     padding: 8px;
     margin: 0;
 }
 
 #logo {
-    height: 30px;
+    display: none;
 }
 
-a {
-    color: #3B82F6;
-}
-
-a:hover {
-    color: purple;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    /*this implies that relative to the size of the root element, whoch is the body element in this case*/
-}
-
-h2 {
-    font-size: 2rem;
+#logo-2 {
+    display: block;
 }
 
 #banner {
+    height: 120px;
     width: 100%;
     object-fit: cover;
 }
 
-#jobs {
-    max-width: 800px;
-    margin: auto;
-    box-shadow: 5px 10px #d8d5d5;
-    /* padding: 0 10px; */
+h1 {
+    text-align: center;
+    margin: 12px 0;
+    /* padding: 12px; */
 }
 
 #about {
     display: flex;
-    max-width: 2000px;
-    font-size: 1rem;
+    flex-direction: column;
+    max-width: 500px;
+    /* font-size: 1rem; */
+    margin: 0 auto;
+    padding: 8px;
 }
 
 #description {
-    width: 50%;
-    margin: auto 40px auto 40px;
     /* font-style: italic; */
     font-size: 1.25rem;
+    margin: auto;
+    padding: auto;
 }
 
 #team {
-    width: 50%;
-    margin: auto 10px auto 200px;
+    margin: auto;
     padding: 20px;
+    /* display: block; */
 }
 
 #team-image {
     border-radius: 5px;
     border-color: black;
     border: 10px solid;
+    width: 400px;
+    height: 200px;
 }
 
-h3 {
-    margin-bottom: 4px;
-}
-
-#course-link-1 {
-    text-decoration: none;
-}
-
-#course-link-2 {
-    text-decoration: none;
-}
-
-.apply {
-    float: right;
-    /* margin-left: 500px; */
-    /* width: 0%; */
-    text-decoration: none;
-    text-align: right;
-    position: absolute;
-    right: 80px;
-}
-
-#footer {
-    background-color: rgba(250, 240, 240, 0.897);
-    padding: 8px;
-    margin-top: 40px;
-    text-align: center;
-}
-
-#footer-links {
-    list-style: none;
-    /* text-align: center; */
-}
-
-#footer-links li {
-    display: inline;
-    margin: 0 16px;
-}
-
-.copyright {
-    color: gray;
-    font-size: 0.875rem;
-}
-
-table,
-th {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    padding: 15px;
-    text-align: center;
-}
-
-th {
-    background-color: #DBEAFE;
-    font-size: 1.25rem;
-}
-
-.data tr:nth-child(odd) {
-    background-color: #EFF6FF;
-}
-
-td {
-    border: 1px solid gray;
-    font-size: 1rem;
-}
-
-/* .form-group {
-    margin: 20px 200px 20px 20px;
-}
-
-#application {
-    margin-left: 38px;
-    margin-top: 100px;
-} */
-
-#application {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 0 8px;
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 16px;
   }
-  
-  .form-group {
+
+  #logo {
+    display: block;
+  }
+
+  #logo-2 {
+    display: none;
+  }
+
+  #banner {
+    height: 220px;
+  }
+
+h1 {
+    text-align: center;
     margin: 16px 0;
-  }
-  
-  .form-group input, textarea, select{
-   font-size:1rem;
-   border-radius: 4px;
-   border: 1px solid gray;
-   margin-top: 4px;
-   padding: 8px;
-   min-width: 360px;
-  }
-  
-  .form-group textarea{
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .form-group input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    min-width: 0;
-  }
-  
-  #application-form label {
-    font-weight: bold;
-  }
-  
-  #application-form input[type="submit"] {
-    background-color: #2563EB;
-    width: 140px;
-    min-width: 0;
-    padding: 16px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-  }
+}
+#about {
+    max-width: 800px;
+    /* font-size: 1rem; */
+}
+
+#description {
+    /* width: 50%; */
+    /* margin: auto 40px auto 40px; */
+    /* font-style: italic; */
+    padding-right: 8px;
+    text-align: justify;
+}
+
+#team-image {
+    width: 400px;
+    height: 250px;
+}
+}
+
+@media screen and (min-width: 768px) {
+    #banner {
+        height: 250px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        /* font-size: 1rem; */
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    #description {
+        width: 50%;
+        margin: auto 40px auto 40px;
+        /* font-style: italic; */
+        padding-right: 8px;
+    }
+
+    #team {
+        width: 50%;
+    }
+
+    #team-image {
+        width: 400px;
+    }
+}

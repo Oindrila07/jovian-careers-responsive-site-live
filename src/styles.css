@@ -81,6 +81,7 @@ h1 {
     font-size: 1.25rem;
     margin: auto;
     padding: auto;
+    width: 500px;
 }
 
 #team {
@@ -95,6 +96,25 @@ h1 {
     border: 10px solid;
     width: 400px;
     height: 200px;
+}
+
+#jobs {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.job {
+    padding: 12px;
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 240px;
+}
+
+#jobs-list {
+    margin: auto;
 }
 
 @media screen and (min-width: 576px) {
@@ -135,6 +155,10 @@ h1 {
     width: 400px;
     height: 250px;
 }
+
+.job {
+    width: 340px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -158,16 +182,65 @@ h1 {
 
     #description {
         width: 50%;
-        margin: auto 40px auto 40px;
+        margin: auto;
         /* font-style: italic; */
         padding-right: 8px;
+        min-width: 400px;
     }
 
     #team {
         width: 50%;
+        margin-left: 50px;
     }
 
     #team-image {
         width: 400px;
     }
+
+    #jobs-list {
+        display: none;
+    }
+
+    #jobs {
+        display: block;
+    }
+
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    table,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #DBEAFE;
+    font-size: 1.25rem;
+}
+
+.data tr:nth-child(odd) {
+    background-color: #EFF6FF;
+}
+
+td {
+    border: 1px solid gray;
+    font-size: 1rem;
+}
+
+#jobs {
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 5px 10px #d8d5d5;
+    /* padding: 0 10px; */
+}
+
 }

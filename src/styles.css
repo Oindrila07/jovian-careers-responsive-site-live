@@ -11,7 +11,7 @@ body {
     /* text-align: justify; ensures that there is no empty spaces in the line */
     line-height: 1.5;
     color: #302f2f;
-    /* min-width: 200px; */
+    min-width: 420px;
 }
 
 h1,
@@ -78,6 +78,7 @@ a:focus {
     height: 120px;
     width: 100%;
     object-fit: cover;
+    min-width: 500px;
 }
 
 h1 {

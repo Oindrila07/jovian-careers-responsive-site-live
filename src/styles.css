@@ -11,6 +11,7 @@ body {
     /* text-align: justify; ensures that there is no empty spaces in the line */
     line-height: 1.5;
     color: #302f2f;
+    /* min-width: 200px; */
 }
 
 h1,
@@ -135,6 +136,80 @@ h2 {
     margin: auto;
 }
 
+#application {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
+}
+
+.form-group input,
+textarea,
+select {
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-top: 4px;
+    padding: 8px;
+    min-width: 360px;
+    width: 80%;
+}
+
+.form-group textarea {
+    /* width: 100%; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    min-width: 0;
+}
+
+#application-form label {
+    font-weight: bold;
+}
+
+#application-form input[type="submit"] {
+    background-color: #2563EB;
+    width: 140px;
+    min-width: 0;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: rgba(250, 240, 240, 0.897);
+    padding: 8px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+    text-align: center;
+}
+
+#footer-links li {
+    /* margin: 0 16px; */
+    /* padding-left: 0;
+    padding-right: 10px; */
+}
+
+.copyright {
+    color: gray;
+    font-size: 0.875rem;
+}
+
+
 @media screen and (min-width: 576px) {
     body {
         font-size: 16px;
@@ -178,6 +253,20 @@ h2 {
     .job {
         width: 340px;
     }
+
+    .form-group input,
+select {
+    width: auto;
+}
+
+.form-group textarea {
+    width: 80%;
+}
+
+footer-links li {
+    display: inline;
+}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -209,7 +298,7 @@ h2 {
 
     #team {
         width: 50%;
-        margin-left: 50px;
+        margin-left: 150px;
     }
 
     #team-image {
@@ -260,6 +349,23 @@ h2 {
         margin: auto;
         box-shadow: 5px 10px #d8d5d5;
         /* padding: 0 10px; */
+    }
+
+    #application {
+        max-width: 800px;
+    }
+
+    #footer-links li {
+        display: inline;
+        padding-right: 8px;
+        margin: 0 auto;
+        padding-right: 8px;
+    }
+
+    #footer {
+        text-align: 0;
+        margin: auto;
+        padding: auto;
     }
 
 }
